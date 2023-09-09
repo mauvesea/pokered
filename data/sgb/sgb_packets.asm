@@ -123,8 +123,8 @@ BlkPacket_Slots:
 BlkPacket_Titlescreen:
 	ATTR_BLK 3
 	ATTR_BLK_DATA %011, 0,0,0, 00,00, 19,07 ; pokemon logo: pal 0
-	ATTR_BLK_DATA %010, 1,1,0, 00,08, 19,09 ; version text: pal 1
-	ATTR_BLK_DATA %011, 2,2,0, 00,10, 19,17 ; player, mon, copyright text: pal 2
+	ATTR_BLK_DATA %010, 1,1,0, 00,08, 19,08 ; version text: pal 1
+	ATTR_BLK_DATA %011, 2,2,0, 00,09, 19,17 ; player, mon, copyright text: pal 2
 	ds 12, 0
 
 ; unused

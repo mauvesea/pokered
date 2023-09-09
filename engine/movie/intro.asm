@@ -12,6 +12,8 @@ PlayIntro:
 	ldh [hAutoBGTransferEnabled], a
 	call PlayShootingStar
 	call PlayIntroScene
+	ld c, 60
+	call DelayFrames
 	call GBFadeOutToWhite
 	xor a
 	ldh [hSCX], a
