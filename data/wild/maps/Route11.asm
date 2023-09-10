@@ -1,26 +1,15 @@
 Route11WildMons:
-	def_grass_wildmons 15 ; encounter rate
-IF DEF(_RED)
-	db 14, EKANS
-	db 15, SPEAROW
-	db 12, EKANS
-	db  9, DROWZEE
-	db 13, SPEAROW
-	db 13, DROWZEE
-	db 15, EKANS
-ENDC
-IF DEF(_BLUE)
-	db 14, SANDSHREW
-	db 15, SPEAROW
-	db 12, SANDSHREW
-	db  9, DROWZEE
-	db 13, SPEAROW
-	db 13, DROWZEE
-	db 15, SANDSHREW
-ENDC
-	db 17, SPEAROW
-	db 11, DROWZEE
+	def_grass_wildmons 25 ; encounter rate
+	db 15, DIGLETT
 	db 15, DROWZEE
+	db 16, KOFFING
+	db 14, DIGLETT
+	db 16, DROWZEE
+	db 16, DIGLETT
+	db 17, DIGLETT
+	db 16, VOLTORB
+	db 15, VOLTORB
+	db 17, KOFFING
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

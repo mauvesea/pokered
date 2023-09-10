@@ -502,6 +502,10 @@ DrawTrainerInfo:
 	ld hl, BadgeNumbersTileGraphics  ; badge number tile patterns
 	ld de, vChars1 tile $58
 	call TrainerInfo_FarCopyData
+	ld hl, PokemonBadgeTileGraphics  ; badge number tile patterns
+	ld de, vChars1 tile $40
+	ld bc, $9 tiles
+	call TrainerInfo_FarCopyData	
 	ld hl, GymLeaderFaceAndBadgeTileGraphics  ; gym leader face and badge tile patterns
 	ld de, vChars2 tile $20
 	ld bc, 8 * 8 tiles
@@ -541,7 +545,7 @@ DrawTrainerInfo:
 	call TrainerInfo_DrawVerticalLine
 	hlcoord 19, 10
 	call TrainerInfo_DrawVerticalLine
-	hlcoord 6, 9
+	hlcoord 4, 9
 	ld de, TrainerInfo_BadgesText
 	call PlaceString
 	hlcoord 2, 2
@@ -554,7 +558,7 @@ DrawTrainerInfo:
 	ld de, wPlayerMoney
 	ld c, $e3
 	call PrintBCDNumber
-	hlcoord 9, 6
+	hlcoord 7, 6
 	ld de, wPlayTimeHours ; hours
 	lb bc, LEFT_ALIGN | 1, 3
 	call PrintNumber
@@ -575,7 +579,7 @@ TrainerInfo_NameMoneyTimeText:
 
 ; $76 is a circle tile
 TrainerInfo_BadgesText:
-	db $76,"BADGES",$76,"@"
+	db $76,$c0,$c1,$c2,$c3,$c4,$c5,$c6,$c7,$c8,$76,"@"
 
 ; draws a text box on the trainer info screen
 ; height is always 6

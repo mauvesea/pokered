@@ -1,15 +1,15 @@
 MtMoonB1FWildMons:
-	def_grass_wildmons 10 ; encounter rate
-	db  8, ZUBAT
-	db  7, ZUBAT
-	db  7, GEODUDE
-	db  8, GEODUDE
+	def_grass_wildmons 25 ; encounter rate
 	db  9, ZUBAT
-	db 10, PARAS
+	db  8, ZUBAT
 	db 10, ZUBAT
+	db  9, EKANS
+	db  9, MANKEY
+	db  7, ZUBAT
 	db 11, ZUBAT
+	db  9, PARAS
 	db  9, CLEFAIRY
-	db  9, GEODUDE
+	db 10, PARAS
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

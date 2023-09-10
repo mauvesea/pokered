@@ -81,7 +81,7 @@ HandlePokedexSideMenu:
 	ld hl, wTopMenuItemY
 	ld a, 10
 	ld [hli], a ; top menu item Y
-	ld a, 15
+	ld a, 14
 	ld [hli], a ; top menu item X
 	xor a
 	ld [hli], a ; current menu item ID
@@ -128,7 +128,7 @@ HandlePokedexSideMenu:
 
 .buttonBPressed
 	push bc
-	hlcoord 15, 10
+	hlcoord 14, 10
 	ld de, 20
 	lb bc, " ", 7
 	call DrawTileLine ; cover up the menu cursor in the side menu
@@ -158,18 +158,18 @@ HandlePokedexListMenu:
 	xor a
 	ldh [hAutoBGTransferEnabled], a
 ; draw the horizontal line separating the seen and owned amounts from the menu
-	hlcoord 15, 8
-	ld a, "─"
-	ld [hli], a
-	ld [hli], a
-	ld [hli], a
-	ld [hli], a
-	ld [hli], a
-	hlcoord 14, 0
+;	hlcoord 15, 8
+;	ld a, "─"
+;	ld [hli], a
+;	ld [hli], a
+;	ld [hli], a
+;	ld [hli], a
+;	ld [hli], a
+	hlcoord 12, 0
 	ld [hl], $71 ; vertical line tile
-	hlcoord 14, 1
+	hlcoord 12, 1
 	call DrawPokedexVerticalLine
-	hlcoord 14, 9
+	hlcoord 12, 9
 	call DrawPokedexVerticalLine
 	ld hl, wPokedexSeen
 	ld b, wPokedexSeenEnd - wPokedexSeen
@@ -185,16 +185,19 @@ HandlePokedexListMenu:
 	hlcoord 16, 6
 	lb bc, 1, 3
 	call PrintNumber ; print number of owned pokemon
-	hlcoord 16, 2
+	hlcoord 13, 2
 	ld de, PokedexSeenText
 	call PlaceString
-	hlcoord 16, 5
+	hlcoord 13, 5
 	ld de, PokedexOwnText
 	call PlaceString
 	hlcoord 1, 1
 	ld de, PokedexContentsText
 	call PlaceString
-	hlcoord 16, 10
+	hlcoord 13, 9
+	lb bc, 7, 5
+	call TextBoxBorder	
+	hlcoord 15, 10
 	ld de, PokedexMenuItemsText
 	call PlaceString
 ; find the highest pokedex number among the pokemon the player has seen
@@ -217,7 +220,7 @@ HandlePokedexListMenu:
 .loop
 	xor a
 	ldh [hAutoBGTransferEnabled], a
-	hlcoord 4, 2
+	hlcoord 2, 2
 	lb bc, 14, 10
 	call ClearScreenArea
 	hlcoord 1, 3
@@ -246,6 +249,8 @@ HandlePokedexListMenu:
 	call PrintNumber ; print the pokedex number
 	ld de, SCREEN_WIDTH
 	add hl, de
+	dec hl
+	dec hl
 	dec hl
 	push hl
 	ld hl, wPokedexOwned
@@ -360,16 +365,16 @@ DrawPokedexVerticalLine:
 	ret
 
 PokedexSeenText:
-	db "SEEN@"
+	db "FOUND@"
 
 PokedexOwnText:
-	db "OWN@"
+	db "CAUGHT@"
 
 PokedexContentsText:
-	db "CONTENTS@"
+	db "INDEX@"
 
 PokedexMenuItemsText:
-	db   "DATA"
+	db   "INFO"
 	next "CRY"
 	next "AREA"
 	next "QUIT@"

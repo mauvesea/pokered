@@ -1,29 +1,26 @@
 SafariZoneCenterWildMons:
-	def_grass_wildmons 30 ; encounter rate
-IF DEF(_RED)
-	db 22, NIDORAN_M
-	db 25, RHYHORN
-	db 22, VENONAT
-	db 24, EXEGGCUTE
-	db 31, NIDORINO
-	db 25, EXEGGCUTE
-	db 31, NIDORINA
-	db 30, PARASECT
-	db 23, SCYTHER
-ENDC
-IF DEF(_BLUE)
-	db 22, NIDORAN_F
-	db 25, RHYHORN
-	db 22, VENONAT
-	db 24, EXEGGCUTE
-	db 31, NIDORINA
-	db 25, EXEGGCUTE
-	db 31, NIDORINO
-	db 30, PARASECT
-	db 23, PINSIR
-ENDC
-	db 23, CHANSEY
+	def_grass_wildmons 50 ; encounter rate
+	db 27, CUBONE
+	db 25, MAROWAK
+	db 25, PARASECT
+	db 25, GOLDUCK
+	db 28, CLEFAIRY
+	db 27, PARASECT
+	db 30, MAROWAK
+	db 30, GOLDUCK
+	db 20, CHANSEY
+	db 25, CHANSEY
 	end_grass_wildmons
 
-	def_water_wildmons 0 ; encounter rate
+	def_water_wildmons 30 ; encounter rate
+	db 30, SEEL
+	db 29, POLIWHIRL
+	db 30, HORSEA
+	db 30, POLIWHIRL
+	db 31, SEEL
+	db 30, DEWGONG
+	db 29, SEADRA
+	db 29, SEEL
+	db 31, SEADRA
+	db 32, SEADRA
 	end_water_wildmons

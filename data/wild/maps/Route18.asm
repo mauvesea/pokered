@@ -1,13 +1,13 @@
 Route18WildMons:
 	def_grass_wildmons 25 ; encounter rate
-	db 20, SPEAROW
-	db 22, SPEAROW
-	db 25, RATICATE
-	db 24, DODUO
-	db 25, FEAROW
-	db 26, DODUO
-	db 28, DODUO
-	db 29, RATICATE
+	db 32, BELLSPROUT
+	db 32, ODDISH
+	db 28, PIDGEOTTO
+	db 28, GLOOM
+	db 28, WEEPINBELL
+	db 28, FEAROW
+	db 28, GROWLITHE
+	db 28, PONYTA
 	db 27, FEAROW
 	db 29, FEAROW
 	end_grass_wildmons
