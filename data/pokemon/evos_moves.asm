@@ -722,11 +722,13 @@ PsyduckEvosMoves:
 	db EV_LEVEL, 33, GOLDUCK
 	db 0
 ; Learnset
-	db 28, TAIL_WHIP
-	db 31, DISABLE
-	db 36, CONFUSION
-	db 43, FURY_SWIPES
-	db 52, HYDRO_PUMP
+	db 8, TAIL_WHIP
+	db 10, WATER_GUN
+	db 16, PECK
+	db 28, DISABLE
+	db 31, CONFUSION
+	db 36, FURY_SWIPES
+	db 43, HYDRO_PUMP
 	db 0
 
 DrowzeeEvosMoves:
@@ -1515,11 +1517,13 @@ GolduckEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 28, TAIL_WHIP
-	db 31, DISABLE
-	db 39, CONFUSION
-	db 48, FURY_SWIPES
-	db 59, HYDRO_PUMP
+	db 8, TAIL_WHIP
+	db 10, WATER_GUN
+	db 16, PECK
+	db 28, DISABLE
+	db 31, CONFUSION
+	db 39, FURY_SWIPES
+	db 48, HYDRO_PUMP
 	db 0
 
 HypnoEvosMoves:
