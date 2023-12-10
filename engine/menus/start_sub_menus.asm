@@ -556,8 +556,9 @@ DrawTrainerInfo:
 	call PlaceString
 	hlcoord 8, 4
 	ld de, wPlayerMoney
-	ld c, $e3
+	ld c, $c3
 	call PrintBCDNumber
+	ld [hl],"¥"
 	hlcoord 7, 6
 	ld de, wPlayTimeHours ; hours
 	lb bc, LEFT_ALIGN | 1, 3
@@ -579,7 +580,7 @@ TrainerInfo_NameMoneyTimeText:
 
 ; $76 is a circle tile
 TrainerInfo_BadgesText:
-	db $76,$c0,$c1,$c2,$c3,$c4,$c5,$c6,$c7,$c8,$76,"@"
+	db $76,$76,"@"
 
 ; draws a text box on the trainer info screen
 ; height is always 6

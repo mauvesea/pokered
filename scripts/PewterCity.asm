@@ -86,6 +86,7 @@ MovementData_PewterMuseumGuyExit:
 	db NPC_MOVEMENT_DOWN
 	db NPC_MOVEMENT_DOWN
 	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
 	db -1 ; end
 
 PewterCityHideSuperNerd1Script:
@@ -136,7 +137,7 @@ PewterCityYoungsterShowsPlayerGymScript:
 	ldh [hSpriteScreenXCoord], a
 	ld a, 22
 	ldh [hSpriteMapYCoord], a
-	ld a, 16
+	ld a, 18
 	ldh [hSpriteMapXCoord], a
 	ld a, PEWTERCITY_YOUNGSTER
 	ld [wSpriteIndex], a
@@ -150,11 +151,13 @@ PewterCityYoungsterShowsPlayerGymScript:
 	ret
 
 MovementData_PewterGymGuyExit:
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_LEFT
+	db NPC_MOVEMENT_LEFT
 	db -1 ; end
 
 PewterCityHideYoungsterScript:

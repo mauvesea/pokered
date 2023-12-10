@@ -250,20 +250,20 @@ PewterMovementScript_WalkToGym:
 
 RLEList_PewterGymPlayer:
 	db NO_INPUT, 1
-	db D_RIGHT, 2
+	db D_RIGHT, 5
 	db D_DOWN, 5
-	db D_LEFT, 11
+	db D_LEFT, 8
 	db D_UP, 5
-	db D_LEFT, 15
+	db D_LEFT, 19
 	db -1 ; end
 
 RLEList_PewterGymGuy:
 	db NPC_MOVEMENT_DOWN, 2
-	db NPC_MOVEMENT_LEFT, 15
+	db NPC_MOVEMENT_LEFT, 19
 	db NPC_MOVEMENT_UP, 5
-	db NPC_MOVEMENT_LEFT, 11
+	db NPC_MOVEMENT_LEFT, 8
 	db NPC_MOVEMENT_DOWN, 5
-	db NPC_MOVEMENT_RIGHT, 3
+	db NPC_MOVEMENT_RIGHT, 6
 	db -1 ; end
 
 FreezeEnemyTrainerSprite::
