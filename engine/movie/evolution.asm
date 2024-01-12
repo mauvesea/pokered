@@ -51,8 +51,8 @@ EvolveMon:
 	lb bc, $1, $10
 .animLoop
 	push bc
-	call Evolution_CheckForCancel
-	jr c, .evolutionCancelled
+;	call Evolution_CheckForCancel
+;	jr c, .evolutionCancelled
 	call Evolution_BackAndForthAnim
 	pop bc
 	inc b
