@@ -37,19 +37,57 @@ Route22GetRivalTrainerNoByStarterScript:
 	ret
 
 Route22MoveRivalRightScript:
-	ld de, Route22RivalMovementData
-	ld a, [wcf0d]
+	ld a, [wcf0d] ; Player Position Index
 	cp $1
-	jr z, .asm_50ef1
-	inc de
-.asm_50ef1
+	jr z, .Pos1
+	cp $2
+	jr z, .Pos2
+	cp $3
+	jr z, .Pos3
+	ld de, Route22RivalMovementData4
+	jr .FacingDown
+.Pos1
+	ld de, Route22RivalMovementData1
+	jr .FacingDown
+.Pos2
+	ld de, Route22RivalMovementData2
+	jr .FacingRight
+.Pos3
+	ld de, Route22RivalMovementData3
+.FacingDown
+	call MoveSprite
+	ld a, SPRITE_FACING_DOWN
+	jr .SetFacing
+.FacingRight
 	call MoveSprite
 	ld a, SPRITE_FACING_RIGHT
+.SetFacing
 	ldh [hSpriteFacingDirection], a
 	jp SetSpriteFacingDirectionAndDelay
 
-Route22RivalMovementData:
+Route22RivalMovementData1:
+	db NPC_MOVEMENT_UP
 	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db -1 ; end
+
+Route22RivalMovementData2:
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db -1 ; end
+
+Route22RivalMovementData3:
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db -1 ; end
+
+Route22RivalMovementData4:
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
 	db NPC_MOVEMENT_RIGHT
 	db NPC_MOVEMENT_RIGHT
 	db NPC_MOVEMENT_RIGHT
@@ -76,8 +114,10 @@ Route22DefaultScript:
 	ret
 
 .Route22RivalBattleCoords
-	dbmapcoord 29,  4
-	dbmapcoord 29,  5
+	dbmapcoord 31,  4
+	dbmapcoord 31,  5
+	dbmapcoord 31,  6
+	dbmapcoord 31,  7
 	db -1 ; end
 
 Route22FirstRivalBattleScript:
@@ -107,16 +147,7 @@ Route22Rival1StartBattleScript:
 	ld a, [wd730]
 	bit 0, a
 	ret nz
-	ld a, [wcf0d]
-	cp $1
-	jr nz, .set_rival_facing_right
-	ld a, PLAYER_DIR_DOWN
-	ld [wPlayerMovingDirection], a
-	ld a, SPRITE_FACING_UP
-	jr .set_rival_facing_direction
-.set_rival_facing_right
 	ld a, SPRITE_FACING_RIGHT
-.set_rival_facing_direction
 	ldh [hSpriteFacingDirection], a
 	ld a, ROUTE22_RIVAL1
 	ldh [hSpriteIndex], a
@@ -150,14 +181,7 @@ Route22Rival1AfterBattleScript:
 	ld a, [wIsInBattle]
 	cp $ff
 	jp z, Route22SetDefaultScript
-	ld a, [wSpritePlayerStateData1FacingDirection]
-	and a ; cp SPRITE_FACING_DOWN
-	jr nz, .not_facing_down
-	ld a, SPRITE_FACING_UP
-	jr .set_rival_facing
-.not_facing_down
 	ld a, SPRITE_FACING_RIGHT
-.set_rival_facing
 	ldh [hSpriteFacingDirection], a
 	ld a, ROUTE22_RIVAL1
 	ldh [hSpriteIndex], a
@@ -173,7 +197,7 @@ Route22Rival1AfterBattleScript:
 	call PlaySound
 	farcall Music_RivalAlternateStart
 	ld a, [wcf0d]
-	cp $1
+	cp $4
 	jr nz, .exit_movement_2
 	call .RivalExit1Script
 	jr .next_script
@@ -196,26 +220,25 @@ Route22MoveRival1:
 	jp MoveSprite
 
 Route22Rival1ExitMovementData1:
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_DOWN
-	db -1 ; end
-
-Route22Rival1ExitMovementData2:
 	db NPC_MOVEMENT_UP
 	db NPC_MOVEMENT_RIGHT
 	db NPC_MOVEMENT_RIGHT
 	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db -1 ; end
+
+Route22Rival1ExitMovementData2:
 	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_DOWN
-	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
 	db -1 ; end
 
 Route22Rival1ExitScript:
