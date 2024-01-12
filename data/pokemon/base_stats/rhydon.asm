@@ -3,7 +3,7 @@
 	db 105, 130, 120,  40,  45
 	;   hp  atk  def  spd  spc
 
-	db GROUND, ROCK ; type
+	db GROUND, GROUND ; type
 	db 60 ; catch rate
 	db 204 ; base exp
 
@@ -23,4 +23,5 @@
 	     SURF,         STRENGTH
 	; end
 
-	db 0 ; padding
+	db BANK(RhydonPicFront)
+	assert BANK(RhydonPicFront) == BANK(RhydonPicBack)

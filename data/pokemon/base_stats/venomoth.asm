@@ -3,7 +3,7 @@
 	db  70,  65,  60,  90,  90
 	;   hp  atk  def  spd  spc
 
-	db BUG, POISON ; type
+	db PSYCHIC_TYPE, POISON ; type
 	db 75 ; catch rate
 	db 138 ; base exp
 
@@ -20,4 +20,5 @@
 	     SWIFT,        REST,         PSYWAVE,      SUBSTITUTE
 	; end
 
-	db 0 ; padding
+	db BANK(VenomothPicFront)
+	assert BANK(VenomothPicFront) == BANK(VenomothPicBack)

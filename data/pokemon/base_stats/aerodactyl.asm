@@ -3,7 +3,7 @@
 	db  80, 105,  65, 130,  60
 	;   hp  atk  def  spd  spc
 
-	db ROCK, FLYING ; type
+	db GROUND, FLYING ; type
 	db 45 ; catch rate
 	db 202 ; base exp
 
@@ -20,4 +20,5 @@
 	     REST,         SUBSTITUTE,   FLY
 	; end
 
-	db 0 ; padding
+	db BANK(AerodactylPicFront)
+	assert BANK(AerodactylPicFront) == BANK(AerodactylPicBack)

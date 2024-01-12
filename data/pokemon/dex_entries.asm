@@ -891,9 +891,9 @@ DugtrioDexEntry:
 	text_end
 
 VenomothDexEntry:
-	db "POISONMOTH@"
-	db 4,11
-	dw 280
+	db "BUTTERFLY@"
+	db 3,7
+	dw 710
 	text_far _VenomothDexEntry
 	text_end
 
@@ -919,9 +919,9 @@ MetapodDexEntry:
 	text_end
 
 ButterfreeDexEntry:
-	db "BUTTERFLY@"
-	db 3,7
-	dw 710
+	db "POISONMOTH@"
+	db 4,11
+	dw 280
 	text_far _ButterfreeDexEntry
 	text_end
 

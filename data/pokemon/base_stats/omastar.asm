@@ -3,7 +3,7 @@
 	db  70,  60, 125,  55, 115
 	;   hp  atk  def  spd  spc
 
-	db ROCK, WATER ; type
+	db GROUND, WATER ; type
 	db 45 ; catch rate
 	db 199 ; base exp
 
@@ -21,4 +21,5 @@
 	     SURF
 	; end
 
-	db 0 ; padding
+	db BANK(OmastarPicFront)
+	assert BANK(OmastarPicFront) == BANK(OmastarPicBack)

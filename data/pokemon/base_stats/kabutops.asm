@@ -3,7 +3,7 @@
 	db  60, 115, 105,  80,  70
 	;   hp  atk  def  spd  spc
 
-	db ROCK, WATER ; type
+	db GROUND, WATER ; type
 	db 45 ; catch rate
 	db 201 ; base exp
 
@@ -21,4 +21,5 @@
 	     REST,         SUBSTITUTE,   SURF
 	; end
 
-	db 0 ; padding
+	db BANK(KabutopsPicFront)
+	assert BANK(KabutopsPicFront) == BANK(KabutopsPicBack)

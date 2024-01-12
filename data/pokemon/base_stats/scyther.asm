@@ -3,7 +3,7 @@
 	db  70, 110,  80, 105,  55
 	;   hp  atk  def  spd  spc
 
-	db BUG, FLYING ; type
+	db NORMAL, FLYING ; type
 	db 45 ; catch rate
 	db 187 ; base exp
 
@@ -19,4 +19,5 @@
 	     SKULL_BASH,   REST,         SUBSTITUTE,   CUT
 	; end
 
-	db 0 ; padding
+	db BANK(ScytherPicFront)
+	assert BANK(ScytherPicFront) == BANK(ScytherPicBack)

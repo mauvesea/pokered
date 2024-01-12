@@ -3,7 +3,7 @@
 	db  60,  95,  80,  30,  80
 	;   hp  atk  def  spd  spc
 
-	db BUG, GRASS ; type
+	db GRASS, GRASS ; type
 	db 75 ; catch rate
 	db 128 ; base exp
 
@@ -20,4 +20,5 @@
 	     REST,         SUBSTITUTE,   CUT
 	; end
 
-	db 0 ; padding
+	db BANK(ParasectPicFront)
+	assert BANK(ParasectPicFront) == BANK(ParasectPicBack)

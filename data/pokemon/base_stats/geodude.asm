@@ -3,7 +3,7 @@
 	db  40,  80, 100,  20,  30
 	;   hp  atk  def  spd  spc
 
-	db ROCK, GROUND ; type
+	db GROUND, GROUND ; type
 	db 255 ; catch rate
 	db 86 ; base exp
 
@@ -21,4 +21,5 @@
 	     ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
 	; end
 
-	db 0 ; padding
+	db BANK(GeodudePicFront)
+	assert BANK(GeodudePicFront) == BANK(GeodudePicBack)

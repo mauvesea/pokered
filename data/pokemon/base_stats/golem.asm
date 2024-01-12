@@ -3,7 +3,7 @@
 	db  80, 110, 130,  45,  55
 	;   hp  atk  def  spd  spc
 
-	db ROCK, GROUND ; type
+	db GROUND, GROUND ; type
 	db 45 ; catch rate
 	db 177 ; base exp
 
@@ -21,4 +21,5 @@
 	     REST,         EXPLOSION,    ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
 	; end
 
-	db 0 ; padding
+	db BANK(GolemPicFront)
+	assert BANK(GolemPicFront) == BANK(GolemPicBack)

@@ -3,7 +3,7 @@
 	db  65,  80,  40,  75,  45
 	;   hp  atk  def  spd  spc
 
-	db BUG, POISON ; type
+	db POISON, POISON ; type
 	db 45 ; catch rate
 	db 159 ; base exp
 
@@ -20,4 +20,5 @@
 	     CUT
 	; end
 
-	db 0 ; padding
+	db BANK(BeedrillPicFront)
+	assert BANK(BeedrillPicFront) == BANK(BeedrillPicBack)

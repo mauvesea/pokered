@@ -3,7 +3,7 @@
 	db  55,  95, 115,  35,  45
 	;   hp  atk  def  spd  spc
 
-	db ROCK, GROUND ; type
+	db GROUND, GROUND ; type
 	db 120 ; catch rate
 	db 134 ; base exp
 
@@ -21,4 +21,5 @@
 	     ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
 	; end
 
-	db 0 ; padding
+	db BANK(GravelerPicFront)
+	assert BANK(GravelerPicFront) == BANK(GravelerPicBack)

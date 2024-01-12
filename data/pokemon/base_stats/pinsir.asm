@@ -3,7 +3,7 @@
 	db  65, 125, 100,  85,  55
 	;   hp  atk  def  spd  spc
 
-	db BUG, BUG ; type
+	db NORMAL, NORMAL ; type
 	db 45 ; catch rate
 	db 200 ; base exp
 
@@ -20,4 +20,5 @@
 	     STRENGTH
 	; end
 
-	db 0 ; padding
+	db BANK(PinsirPicFront)
+	assert BANK(PinsirPicFront) == BANK(PinsirPicBack)

@@ -3,7 +3,7 @@
 	db  60,  45,  50,  70,  80
 	;   hp  atk  def  spd  spc
 
-	db BUG, FLYING ; type
+	db POISON, FLYING ; type
 	db 45 ; catch rate
 	db 160 ; base exp
 
@@ -20,4 +20,5 @@
 	     SWIFT,        REST,         PSYWAVE,      SUBSTITUTE
 	; end
 
-	db 0 ; padding
+	db BANK(ButterfreePicFront)
+	assert BANK(ButterfreePicFront) == BANK(ButterfreePicBack)

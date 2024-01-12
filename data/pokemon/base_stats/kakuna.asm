@@ -3,7 +3,7 @@
 	db  45,  25,  50,  35,  25
 	;   hp  atk  def  spd  spc
 
-	db BUG, POISON ; type
+	db POISON, POISON ; type
 	db 120 ; catch rate
 	db 71 ; base exp
 
@@ -17,4 +17,5 @@
 	tmhm
 	; end
 
-	db 0 ; padding
+	db BANK(KakunaPicFront)
+	assert BANK(KakunaPicFront) == BANK(KakunaPicBack)

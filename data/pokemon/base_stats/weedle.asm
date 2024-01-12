@@ -3,7 +3,7 @@
 	db  40,  35,  30,  50,  20
 	;   hp  atk  def  spd  spc
 
-	db BUG, POISON ; type
+	db POISON, POISON ; type
 	db 255 ; catch rate
 	db 52 ; base exp
 
@@ -17,4 +17,5 @@
 	tmhm
 	; end
 
-	db 0 ; padding
+	db BANK(WeedlePicFront)
+	assert BANK(WeedlePicFront) == BANK(WeedlePicBack)

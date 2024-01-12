@@ -3,7 +3,7 @@
 	db  45,  30,  35,  45,  20
 	;   hp  atk  def  spd  spc
 
-	db BUG, BUG ; type
+	db NORMAL, NORMAL ; type
 	db 255 ; catch rate
 	db 53 ; base exp
 
@@ -17,4 +17,5 @@
 	tmhm
 	; end
 
-	db 0 ; padding
+	db BANK(CaterpiePicFront)
+	assert BANK(CaterpiePicFront) == BANK(CaterpiePicBack)
