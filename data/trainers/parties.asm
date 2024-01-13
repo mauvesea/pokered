@@ -149,7 +149,7 @@ SailorData:
 
 JrTrainerMData:
 ; Pewter Gym
-	db 11, DIGLETT, SANDSHREW, 0
+	db 8, GEODUDE, GROWLITHE, 0
 ; Route 24/Route 25
 	db 14, RATTATA, EKANS, 0
 ; Route 24
