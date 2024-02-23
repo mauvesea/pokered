@@ -6,53 +6,62 @@ _ViridianForestYoungster1Text::
 	line "#MON fights!"
 	done
 
-_ViridianForestYoungster2BattleText::
+_ViridianForestYoungster2Text::
+	text "I ran out of #"
+	line "BALLs to catch"
+	cont "#MON with!"
+
+	para "You should carry"
+	line "extras!"
+	done
+
+_ViridianForestBugcatcher1BattleText::
 	text "Hey! You have"
 	line "#MON! Come on!"
 	cont "Let's battle'em!"
 	done
 
-_ViridianForestYoungster2EndBattleText::
+_ViridianForestBugcatcher1EndBattleText::
 	text "No!"
 	line "CATERPIE can't"
 	cont "cut it!"
 	prompt
 
-_ViridianForestYoungster2AfterBattleText::
+_ViridianForestBugcatcher1AfterBattleText::
 	text "Ssh! You'll scare"
 	line "the bugs away!"
 	done
 
-_ViridianForestYoungster3BattleText::
+_ViridianForestBugcatcher2BattleText::
 	text "Yo! You can't jam"
 	line "out if you're a"
 	cont "#MON trainer!"
 	done
 
-_ViridianForestYoungster3EndBattleText::
+_ViridianForestBugcatcher2EndBattleText::
 	text "Huh?"
 	line "I ran out of"
 	cont "#MON!"
 	prompt
 
-_ViridianForestYoungster3AfterBattleText::
+_ViridianForestBugcatcher2AfterBattleText::
 	text "Darn! I'm going"
 	line "to catch some"
 	cont "stronger ones!"
 	done
 
-_ViridianForestYoungster4BattleText::
+_ViridianForestBugcatcher3BattleText::
 	text "Hey, wait up!"
 	line "What's the hurry?"
 	done
 
-_ViridianForestYoungster4EndBattleText::
+_ViridianForestBugcatcher3EndBattleText::
 	text "I"
 	line "give! You're good"
 	cont "at this!"
 	prompt
 
-_ViridianForestYoungster4AfterBattleText::
+_ViridianForestBugcatcher3AfterBattleText::
 	text "Sometimes, you"
 	line "can find stuff on"
 	cont "the ground!"
@@ -60,15 +69,6 @@ _ViridianForestYoungster4AfterBattleText::
 	para "I'm looking for"
 	line "the stuff I"
 	cont "dropped!"
-	done
-
-_ViridianForestYoungster5Text::
-	text "I ran out of #"
-	line "BALLs to catch"
-	cont "#MON with!"
-
-	para "You should carry"
-	line "extras!"
 	done
 
 _ViridianForestTrainerTips1Text::
@@ -120,4 +120,22 @@ _ViridianForestLeavingSignText::
 	text "LEAVING"
 	line "VIRIDIAN FOREST"
 	cont "PEWTER CITY AHEAD"
+	done
+
+_ViridianForestYoungster3BattleText::
+_ViridianForestYoungster3EndBattleText::
+_ViridianForestYoungster3AfterBattleText::
+_ViridianForestBugcatcher4BattleText::
+_ViridianForestBugcatcher4EndBattleText::
+_ViridianForestBugcatcher4AfterBattleText::
+_ViridianForestBugcatcher5BattleText::
+_ViridianForestBugcatcher5EndBattleText::
+_ViridianForestBugcatcher5AfterBattleText::
+_ViridianForestLass1BattleText::
+_ViridianForestLass1EndBattleText::
+_ViridianForestLass1AfterBattleText::
+_ViridianForestLass2BattleText::
+_ViridianForestLass2EndBattleText::
+_ViridianForestLass2AfterBattleText::
+	text "Test"
 	done

@@ -144,3 +144,15 @@ _PewterGymGuidePostBattleText::
 	line "You're #MON"
 	cont "champ material!"
 	done
+
+_PewterGymYoungsterBattleText::
+	text "Test"
+	done
+
+_PewterGymYoungsterEndBattleText::
+	text "Test"
+	done
+
+_PewterGymYoungsterAfterBattleText::
+	text "Test"
+	done
