@@ -21,13 +21,13 @@ Pokecenter_Coll::
 
 Dojo_Coll::
 Gym_Coll::
-	coll_tiles $11, $16, $19, $2b, $3c, $3d, $3f, $4a, $4c, $4d, $03
+	coll_tiles $11, $16, $2b, $3c, $3d, $3f, $4a, $4c, $4d, $03
 
 Forest_Coll::
 	coll_tiles $1e, $20, $2e, $30, $34, $37, $39, $3a, $40, $51, $52, $5a, $5c, $5e, $5f
 
 House_Coll::
-	coll_tiles $01, $12, $14, $28, $32, $37, $44, $54, $5c
+	coll_tiles $01, $12, $14, $28, $32, $37, $40, $42, $44, $54, $5c
 
 ForestGate_Coll::
 Museum_Coll::

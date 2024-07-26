@@ -561,7 +561,10 @@ _EnemiesOnEverySideText::
 	done
 
 _WhatGoesAroundComesAroundText::
-	text "What goes around"
+	text "Enemies on every"
+	line "side!"
+
+	para "What goes around"
 	line "comes around!"
 	done
 
