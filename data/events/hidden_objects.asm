@@ -502,7 +502,7 @@ CeruleanCave1HiddenObjects:
 	db -1 ; end
 
 CeruleanCave3HiddenObjects:
-	hidden_object 27,  3, ULTRA_BALL, HiddenItems
+	hidden_object 29, 22, RARE_CANDY, HiddenItems
 	db -1 ; end
 
 PowerPlantHiddenObjects:

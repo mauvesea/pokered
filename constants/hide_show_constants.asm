@@ -218,7 +218,6 @@ DEF SHOW EQU $15
 	const HS_CERULEAN_CAVE_2F_ITEM_1       ; CE X
 	const HS_CERULEAN_CAVE_2F_ITEM_2       ; CF X
 	const HS_CERULEAN_CAVE_2F_ITEM_3       ; D0 X
-	const HS_MEWTWO                        ; D1 X
 	const HS_CERULEAN_CAVE_B1F_ITEM_1      ; D2 X
 	const HS_CERULEAN_CAVE_B1F_ITEM_2      ; D3 X
 	const HS_VICTORY_ROAD_1F_ITEM_1        ; D4 X

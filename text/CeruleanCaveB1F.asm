@@ -1,3 +1,5 @@
-_MewtwoBattleText::
-	text "Mew!@"
-	text_end
+_CeruleanCaveSignText::
+	text "Beware of the fire"
+	line "type #MON that"
+	cont "lurk around here!"
+	done
