@@ -21,7 +21,7 @@ CeruleanCity_Object:
 	warp_event 30, 19, CERULEAN_GYM, 1
 	warp_event 14, 25, BIKE_SHOP, 1
 	warp_event 25, 25, CERULEAN_MART, 1
-	warp_event  2, 11, CERULEAN_CAVE_1F, 1
+	warp_event  2, 13, CERULEAN_CAVE_1F, 1
 	warp_event 25, 11, CERULEAN_TRASHED_HOUSE, 3
 	warp_event  9, 13, CERULEAN_BADGE_HOUSE, 2
 	warp_event  9, 11, CERULEAN_BADGE_HOUSE, 1
