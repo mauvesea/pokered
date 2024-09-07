@@ -1,6 +1,6 @@
 SECTION "Tilesets 1", ROMX
 
-Overworld_GFX::     INCBIN "gfx/tilesets/overworld.2bpp"
+Overworld_GFX::     INCBIN "gfx/tilesets/tilesets_rg/overworld.2bpp"
 Overworld_Block::   INCBIN "gfx/blocksets/overworld.bst"
 
 RedsHouse1_GFX::
@@ -37,7 +37,7 @@ ForestGate_Block::
 Museum_Block::
 Gate_Block::        INCBIN "gfx/blocksets/gate.bst"
 
-Forest_GFX::        INCBIN "gfx/tilesets/forest.2bpp"
+Forest_GFX::        INCBIN "gfx/tilesets/tilesets_rg/forest.2bpp"
 Forest_Block::      INCBIN "gfx/blocksets/forest.bst"
 
 
