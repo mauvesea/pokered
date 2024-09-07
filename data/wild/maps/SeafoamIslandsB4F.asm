@@ -7,9 +7,9 @@ SeafoamIslandsB4FWildMons:
 	db 42, SEADRA
 	db 41, POLIWHIRL
 	db 42, POLIWHIRL
+	db 45, ARTICUNO
 	db 43, JYNX
-	db 48, ARTICUNO
-	db 48, ARTICUNO
+	db 45, JYNX
 	end_grass_wildmons
 
 	def_water_wildmons 15 ; encounter rate
@@ -21,6 +21,6 @@ SeafoamIslandsB4FWildMons:
 	db 41, POLIWHIRL
 	db 42, POLIWHIRL
 	db 43, DEWGONG
-	db 48, ARTICUNO
-	db 48, ARTICUNO	
+	db 45, ARTICUNO
+	db 45, ARTICUNO
 	end_water_wildmons

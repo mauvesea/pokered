@@ -3,7 +3,7 @@ SafariZoneCenterWildMons:
 	db 27, CUBONE
 	db 25, MAROWAK
 	db 25, PARASECT
-	db 25, GOLDUCK
+	db 25, LICKITUNG
 	db 28, CLEFAIRY
 	db 27, PARASECT
 	db 30, MAROWAK
@@ -22,5 +22,5 @@ SafariZoneCenterWildMons:
 	db 29, SEADRA
 	db 29, SEEL
 	db 31, SEADRA
-	db 32, SEADRA
+	db 10, DRATINI
 	end_water_wildmons

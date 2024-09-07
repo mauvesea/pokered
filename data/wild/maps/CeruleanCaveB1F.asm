@@ -1,21 +1,26 @@
 CeruleanCaveB1FWildMons:
 	def_grass_wildmons 25 ; encounter rate
-	db 55, RHYDON
-	db 55, MAROWAK
-	db 55, ELECTRODE
-	db 64, CHANSEY
-	db 64, PARASECT
-	db 64, RAICHU
-IF DEF(_RED)
-	db 57, ARBOK
-ENDC
-IF DEF(_BLUE)
-	db 57, SANDSLASH
-ENDC
-	db 65, DITTO
-	db 63, DITTO
-	db 67, DITTO
+	db 43, GOLBAT
+	db 44, GOLBAT
+	db 45, PONYTA
+	db 42, RAPIDASH
+	db 43, NIDORINO
+	db 43, NIDORINA
+	db 42, NINETALES
+	db 45, MOLTRES
+	db 44, MAGMAR
+	db 45, MAGMAR
 	end_grass_wildmons
 
-	def_water_wildmons 0 ; encounter rate
+	def_water_wildmons 5 ; encounter rate
+	db 39, POLIWAG
+	db 40, SHELLDER
+	db 40, HORSEA
+	db 39, HORSEA
+	db 39, SHELLDER
+	db 38, POLIWAG
+	db 40, POLIWAG
+	db 45, MOLTRES
+	db 41, POLIWAG
+	db 41, SHELLDER
 	end_water_wildmons

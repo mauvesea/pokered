@@ -1,21 +1,26 @@
 CeruleanCave1FWildMons:
-	def_grass_wildmons 10 ; encounter rate
-	db 46, GOLBAT
-	db 46, HYPNO
-	db 46, MAGNETON
-	db 49, DODRIO
-	db 49, VENOMOTH
-IF DEF(_RED)
-	db 52, ARBOK
-ENDC
-IF DEF(_BLUE)
-	db 52, SANDSLASH
-ENDC
-	db 49, KADABRA
-	db 52, PARASECT
-	db 53, RAICHU
-	db 53, DITTO
+	def_grass_wildmons 25 ; encounter rate
+	db 43, PONYTA
+	db 39, GOLBAT
+	db 38, GOLBAT
+	db 37, GOLBAT
+	db 41, NIDORINA
+	db 41, NIDORINO
+	db 42, GOLBAT
+	db 40, NINETALES
+	db 40, RAPIDASH
+	db 43, RAPIDASH
 	end_grass_wildmons
 
-	def_water_wildmons 0 ; encounter rate
+	def_water_wildmons 5 ; encounter rate
+	db 39, POLIWAG
+	db 40, SHELLDER
+	db 40, HORSEA
+	db 39, HORSEA
+	db 39, SHELLDER
+	db 38, POLIWAG
+	db 40, POLIWAG
+	db 41, HORSEA
+	db 41, POLIWAG
+	db 41, SHELLDER
 	end_water_wildmons

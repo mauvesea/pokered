@@ -22,5 +22,5 @@ SafariZoneEastWildMons:
 	db 29, SEADRA
 	db 29, SEEL
 	db 31, SEADRA
-	db 32, SEADRA
+	db 10, DRATINI
 	end_water_wildmons
