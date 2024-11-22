@@ -2322,3 +2322,5 @@ SECTION "Stack", WRAM0
 ; the stack grows downward
 	ds $100 - 1
 wStack:: db
+
+ENDSECTION
