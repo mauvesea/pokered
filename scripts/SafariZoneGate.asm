@@ -183,16 +183,16 @@ SafariZoneGateSafariZoneWorker1WouldYouLikeToJoinText:
 	call DisplayTextBoxID
 	ld hl, .MakePaymentText
 	call PrintText
-	ld a, 30
-	ld [wNumSafariBalls], a
-	ld a, HIGH(502)
-	ld [wSafariSteps], a
-	ld a, LOW(502)
-	ld [wSafariSteps + 1], a
+;	ld a, 30
+;	ld [wNumSafariBalls], a
+;	ld a, HIGH(502)
+;	ld [wSafariSteps], a
+;	ld a, LOW(502)
+;	ld [wSafariSteps + 1], a
 	ld a, D_UP
 	ld c, 3
 	call SafariZoneEntranceAutoWalk
-	SetEvent EVENT_IN_SAFARI_ZONE
+;	SetEvent EVENT_IN_SAFARI_ZONE
 	ResetEventReuseHL EVENT_SAFARI_GAME_OVER
 	ld a, SCRIPT_SAFARIZONEGATE_PLAYER_MOVING
 	ld [wSafariZoneGateCurScript], a

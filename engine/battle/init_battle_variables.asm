@@ -27,12 +27,4 @@ InitBattleVariables:
 	jr nz, .loop
 	inc a ; POUND
 	ld [wTestBattlePlayerSelectedMove], a
-	ld a, [wCurMap]
-	cp SAFARI_ZONE_EAST
-	jr c, .notSafariBattle
-	cp SAFARI_ZONE_CENTER_REST_HOUSE
-	jr nc, .notSafariBattle
-	ld a, BATTLE_TYPE_SAFARI
-	ld [wBattleType], a
-.notSafariBattle
 	jpfar PlayBattleMusic
