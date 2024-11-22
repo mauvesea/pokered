@@ -131,11 +131,31 @@ _ViridianForestBugcatcher4AfterBattleText::
 _ViridianForestBugcatcher5BattleText::
 _ViridianForestBugcatcher5EndBattleText::
 _ViridianForestBugcatcher5AfterBattleText::
-_ViridianForestLass1BattleText::
-_ViridianForestLass1EndBattleText::
-_ViridianForestLass1AfterBattleText::
-_ViridianForestLass2BattleText::
-_ViridianForestLass2EndBattleText::
-_ViridianForestLass2AfterBattleText::
 	text "Test"
+	done
+
+_ViridianForestLass2BattleText::
+	text "Go, ODDISH!"
+	done
+_ViridianForestLass2EndBattleText::
+	text "What!?"
+	prompt
+_ViridianForestLass2AfterBattleText::
+	text "I heard GRASS"
+	line "types are good"
+	cont "against BROCK."
+	done
+
+_ViridianForestLass1BattleText::
+	text "PIKACHU, where are"
+	line "you?"
+	done
+_ViridianForestLass1EndBattleText::
+	text "if only I"
+	line "had a PIKACHU..."
+	prompt
+_ViridianForestLass1AfterBattleText::
+	text "I'll keep looking."
+	line "I'm sure PIKACHU"
+	cont "lives here!"
 	done

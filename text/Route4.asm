@@ -5,22 +5,23 @@ _Route4CooltrainerF1Text::
 	done
 
 _Route4CooltrainerF2BattleText::
-	text "I came to get my"
-	line "mushroom #MON!"
+	text "Hey, this is my"
+	line "hiding spot!"
 	done
 
 _Route4CooltrainerF2EndBattleText::
-	text "Oh! My cute"
-	line "mushroom #MON!"
+	text "No"
+	line "way!"
 	prompt
 
 _Route4CooltrainerF2AfterBattleText::
-	text "There might not"
-	line "be any more"
-	cont "mushrooms here."
-
-	para "I think I got"
-	line "them all."
+	text "I'm hiding around"
+	line "here to train"
+	para "until I get strong"
+	line "enough to face"
+	para "the legendary"
+	line "#MON living in"
+	cont "CERULEAN CAVE."
 	done
 
 _Route4MtMoonSignText::
