@@ -1,13 +1,13 @@
 TrainerNames::
 	list_start TrainerNames
-	li "YOUNGSTER"
+	li "SHORT BOY" ; YOUNGSTER
 	li "BUG CATCHER"
 	li "LASS"
 	li "SAILOR"
-	li "JR.TRAINER♂"
-	li "JR.TRAINER♀"
+	li "BOYSCOUT" ; JR.TRAINER♂
+	li "GIRLSCOUT" ; JR.TRAINER♀
 	li "POKéMANIAC"
-	li "SUPER NERD"
+	li "SCIENCE NERD" ; SUPER NERD
 	li "HIKER"
 	li "BIKER"
 	li "BURGLAR"
@@ -15,7 +15,7 @@ TrainerNames::
 	li "JUGGLER"
 	li "FISHERMAN"
 	li "SWIMMER"
-	li "CUE BALL"
+	li "SKINHEAD" ; CUE BALL
 	li "GAMBLER"
 	li "BEAUTY"
 	li "PSYCHIC"
@@ -28,23 +28,23 @@ TrainerNames::
 	li "PROF.OAK"
 	li "CHIEF"
 	li "SCIENTIST"
-	li "GIOVANNI"
+	li "HEMLOCK" ; GIOVANNI
 	li "ROCKET"
 	li "COOLTRAINER♂"
 	li "COOLTRAINER♀"
-	li "BRUNO"
-	li "BROCK"
-	li "MISTY"
-	li "LT.SURGE"
-	li "ERIKA"
-	li "KOGA"
-	li "BLAINE"
-	li "SABRINA"
+	li "SPRUCE" ; BRUNO
+	li "CYPRESS" ; BROCK
+	li "LILLY" ; MISTY
+	li "CROCUSS" ; LT.SURGE
+	li "HOLLY" ; ERIKA
+	li "BONSAI" ; KOGA
+	li "COLEMAN" ; BLAINE
+	li "ZINNIA" ; SABRINA
 	li "GENTLEMAN"
 	li "RIVAL2"
 	li "RIVAL3"
-	li "LORELEI"
+	li "LAUREL" ; LORELEI
 	li "CHANNELER"
-	li "AGATHA"
-	li "LANCE"
+	li "HAZEL" ; AGATHA
+	li "LEIF" ; LANCE
 	assert_list_length NUM_TRAINERS
