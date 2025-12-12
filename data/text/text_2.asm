@@ -1697,62 +1697,71 @@ _LinkCanceledText::
 	done
 
 _OakSpeechText1::
-	text "Hello there!"
-	line "Welcome to the"
-	cont "world of #MON!"
+	text "Nice to meet you!"
+	para "Welcome to the"
+	line "world of Pocket"
+	cont "Monsters!"
 
-	para "My name is OAK!"
-	line "People call me"
-	cont "the #MON PROF!"
+	para "My name is"
+	line "Ohkido."
+	para "Everyone calls me"
+	line "the #MON"
+	cont "PROFESSOR."
 	prompt
 
 _OakSpeechText2A::
-	text "This world is"
-	line "inhabited by"
-	cont "creatures called"
-	cont "#MON!@"
+	text "Creatures called"
+	line "Pocket Monsters"
+	cont "live everywhere"
+	cont "in this world.@"
 	text_end
 
 _OakSpeechText2B::
 	text_start
+	para "People make"
+	line "those creatures"
+	cont "called #mon"
+	para "their pets, or"
+	line "use them in"
+	cont "battle..."
 
-	para "For some people,"
-	line "#MON are"
-	cont "pets. Others use"
-	cont "them for fights."
+	para "And finally..."
 
-	para "Myself..."
-
-	para "I study #MON"
-	line "as a profession."
+	para "I study #MON."
+	line "That's what I do."
 	prompt
 
 _IntroducePlayerText::
-	text "First, what is"
-	line "your name?"
+	text "Well then, let's"
+	line "start with your"
+	cont "name."
+	para "Tell me what"
+	line "you're called!"
 	prompt
 
 _IntroduceRivalText::
-	text "This is my grand-"
-	line "son. He's been"
-	cont "your rival since"
-	cont "you were a baby."
+	text "This one is my"
+	line "grandson."
+	para "He's your child-"
+	line "hood friend and"
+	cont "also your rival."
 
-	para "...Erm, what is"
+	para "Hmm...? What was"
 	line "his name again?"
 	prompt
 
 _OakSpeechText3::
 	text "<PLAYER>!"
 
-	para "Your very own"
-	line "#MON legend is"
-	cont "about to unfold!"
+	para "Your story is"
+	line "about to begin!"
 
-	para "A world of dreams"
-	line "and adventures"
-	cont "with #MON"
-	cont "awaits! Let's go!"
+	para "Dreams and adven-"
+	line "tures!"
+	para "In the world of"
+	line "Pocket Monsters!"
+
+	para "Let's go!"
 	done
 
 _DoYouWantToNicknameText::
@@ -1764,14 +1773,15 @@ _DoYouWantToNicknameText::
 	done
 
 _YourNameIsText::
-	text "Right! So your"
+	text "Hmm... So your"
 	line "name is <PLAYER>!"
 	prompt
 
 _HisNameIsText::
-	text "That's right! I"
-	line "remember now! His"
-	cont "name is <RIVAL>!"
+	text "I see, I see!"
+	line "I remember now,"
+	cont "his name is"
+	cont "<RIVAL>!"
 	prompt
 
 _WillBeTradedText::
