@@ -1,14 +1,23 @@
 _BluesHouseDaisyRivalAtLabText::
-	text "Hi <PLAYER>!"
+	text "Nanami: <'1>Hi,"
+	line "<PLAYER>-kun!"
+	para "My little brother"
 	line "<RIVAL> is out at"
-	cont "Grandpa's lab."
+	cont "Grandpa's lab.<'2>"
 	done
 
 _BluesHouseDaisyOfferMapText::
-	text "Grandpa asked you"
-	line "to run an errand?"
-	cont "Here, this will"
-	cont "help you!"
+	text "Nanami: <'1>Is it"
+	line "true that Grandpa"
+	cont "Ohkido asked you"
+	cont "to do some work"
+	cont "for him?"
+
+	para "This sounds like"
+	line "a chore<...>"
+
+	para "Here, this should"
+	cont "help you!<'2>"
 	prompt
 
 _GotMapText::
@@ -19,24 +28,39 @@ _GotMapText::
 	text_end
 
 _BluesHouseDaisyBagFullText::
-	text "You have too much"
-	line "stuff with you."
+	text "Nanami: <'1>You"
+	line "have too much"
+	cont "stuff in your"
+	cont "bag!<'2>"
 	done
 
 _BluesHouseDaisyUseMapText::
-	text "Use the TOWN MAP"
-	line "to find out where"
-	cont "you are."
+	text "Nanami: <'1>When"
+	line "you want to find"
+	line "out where you"
+	cont "are, or the name"
+	cont "of a place, the"
+	cont "Town Map could"
+	cont "be of great"
+	cont "help.<'2>"
 	done
 
 _BluesHouseDaisyWalkingText::
-	text "#MON are living"
-	line "things! If they"
-	cont "get tired, give"
-	cont "them a rest!"
+	text "Nanami: <'1>#-"
+	line "mon are living"
+	cont "creatures just"
+	cont "like humans!"
+
+	para "When they get"
+	line "tired, let them"
+	cont "have a rest!<'2>"
 	done
 
 _BluesHouseTownMapText::
-	text "It's a big map!"
-	line "This is useful!"
+	text "It's a map of the"
+	line "Kanto Region!"
+
+	para "<...>Would it make"
+	line "you happy to have"
+	cont "one of those?"
 	done

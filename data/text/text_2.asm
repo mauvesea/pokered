@@ -280,8 +280,10 @@ _CeladonCityHotelText::
 	done
 
 _BookcaseText::
-	text "Crammed full of"
-	line "#MON books!"
+	text "This bookshelf is"
+	line "lined up with no-"
+	cont "thing but #mon"
+	cont "books!"
 	done
 
 _NewBicycleText::
@@ -579,9 +581,10 @@ _IndigoPlateauHQText::
 
 _RedBedroomSNESText::
 	text "<PLAYER> is"
-	line "playing the SNES!"
-	cont "...Okay!"
-	cont "It's time to go!"
+	line "playing the"
+	cont "FAMICOM!"
+	para "<...>Alright!"
+	para "It's time to go!"
 	done
 
 _Route15UpstairsBinocularsText::
@@ -801,8 +804,9 @@ _IndigoPlateauStatuesText3::
 	done
 
 _PokemonBooksText::
-	text "Crammed full of"
-	line "#MON books!"
+	text "There are so many"
+	line "#mon books"
+	cont "here!"
 	done
 
 _DiglettSculptureText::
@@ -816,7 +820,7 @@ _ElevatorText::
 	done
 
 _TownMapText::
-	text "A TOWN MAP.@"
+	text "It's a Town Map!@"
 	text_end
 
 _PokemonStuffText::

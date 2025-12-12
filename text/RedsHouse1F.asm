@@ -1,37 +1,59 @@
 _RedsHouse1FMomWakeUpText::
-	text "MOM: Right."
-	line "All boys leave"
-	cont "home some day."
-	cont "It said so on TV."
+	text "Mom: <'1><...>Oh well."
+	line "There comes a day"
+	cont "when all boys"
+	cont "leave their homes"
+	cont "to go on a"
+	cont "journey."
 
-	para "PROF.OAK, next"
-	line "door, is looking"
-	cont "for you."
+	para "Yes<...> That's what"
+	line "that TV show is"
+	cont "all about!"
+
+	para "That reminds me,"
+	line "our neighbor"
+	cont "Prof. Ohkido has"
+	cont "been looking for"
+	cont "you.<'2>"
 	done
 
 _RedsHouse1FMomYouShouldRestText::
-	text "MOM: <PLAYER>!"
-	line "You should take a"
-	cont "quick rest."
+	text "Mom: <'2><PLAYER><...>!"
+	line "Don't you think"
+	cont "it's time for a"
+	cont "little break<...>?<'2>"
+
+	para "<...> <...> <...>"
 	prompt
 
 _RedsHouse1FMomLookingGreatText::
-	text "MOM: Oh good!"
-	line "You and your"
-	cont "#MON are"
-	cont "looking great!"
-	cont "Take care now!"
+	text "Mom: <'1>There,"
+	line "there!"
+
+	para "You and your"
+	line "#mon are full"
+	cont "of energy!"
+
+	para "Well then, be"
+	line "careful!"
+
+	para "Have a good"
+	line "day!<'2>"
 	done
 
 _RedsHouse1FTVStandByMeMovieText::
-	text "There's a movie"
-	line "on TV. Four boys"
-	cont "are walking on"
-	cont "railroad tracks."
+	text "A movie is play-"
+	line "ing on TV!"
 
-	para "I better go too."
+	para "Four boys are"
+	line "walking along"
+	cont "the railroad"
+	cont "tracks<...>"
+
+	para "<...>I gotta go too!"
 	done
 
 _RedsHouse1FTVWrongSideText::
-	text "Oops, wrong side."
+	text "Can't watch it"
+	line "from here<...>"
 	done

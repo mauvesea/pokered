@@ -157,6 +157,10 @@
 	charmap "'t",        $be
 	charmap "'v",        $bf
 
+	charmap "<'1>",      $c0
+	charmap "<'2>",      $c1
+	charmap "<...>",     $c2
+
 	charmap "'",         $e0
 	charmap "<PK>",      $e1
 	charmap "<MN>",      $e2
