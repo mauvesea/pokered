@@ -1,56 +1,76 @@
 _PalletTownOakHeyWaitDontGoOutText::
-	text "OAK: Hey! Wait!"
-	line "Don't go out!@"
+	text "Ohkido: <'1>Hey!"
+	line "Wait! Don't go"
+	cont "there!<'2>@"
 	text_end
 
 _PalletTownOakItsUnsafeText::
-	text "OAK: It's unsafe!"
-	line "Wild #MON live"
-	cont "in tall grass!"
+	text "Ohkido: <'1>That"
+	line "was close!"
 
-	para "You need your own"
-	line "#MON for your"
-	cont "protection."
-	cont "I know!"
+	para "Up there is"
+	line "Route 1."
 
-	para "Here, come with"
-	line "me!"
+	para "Wild #mon can"
+	line "jump out from"
+	cont "the tall grass"
+	cont "there!"
+
+	para "If you had a"
+	line "#mon, you"
+	cont "could fight back<...>"
+
+	para "That's it!"
+
+	para "<...>Follow this"
+	line "old man for a"
+	cont "moment!<'2>"
 	done
 
 _PalletTownGirlText::
 	text "I'm raising"
-	line "#MON too!"
+	line "#mon too!"
 
-	para "When they get"
-	line "strong, they can"
-	cont "protect me!"
+	para "If they grow"
+	line "strong enough,"
+	cont "they could even"
+	cont "act like my"
+	cont "bodyguards!"
 	done
 
 _PalletTownFisherText::
-	text "Technology is"
-	line "incredible!"
+	text "The power of"
+	line "science is"
+	cont "amazing!"
 
-	para "You can now store"
-	line "and recall items"
-	cont "and #MON as"
-	cont "data via PC!"
+	para "You can now use"
+	line "a PC to transfer"
+	cont "Tools and #mon"
+	cont "as data."
 	done
 
 _PalletTownOaksLabSignText::
-	text "OAK #MON"
-	line "RESEARCH LAB"
+	text "This is<...>"
+	line "Professor Ohkido's"
+	cont "#mon Research"
+	cont "Lab."
 	done
 
 _PalletTownSignText::
-	text "PALLET TOWN"
-	line "Shades of your"
-	cont "journey await!"
+	text "This is<...>"
+	line "Masara Town."
+
+	para "Masara is the"
+	line "color of pure"
+	cont "white beginnings."
 	done
 
 _PalletTownPlayersHouseSignText::
-	text "<PLAYER>'s house "
+	text "This is<...>"
+	line "<PLAYER>'s home."
 	done
 
 _PalletTownRivalsHouseSignText::
-	text "<RIVAL>'s house "
+	text "This is<...>"
+	line "<RIVAL>'s home."
 	done
